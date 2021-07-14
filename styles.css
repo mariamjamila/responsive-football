@@ -5,7 +5,8 @@
 /* banner styling */
 
 .banner-container{
-    width: 1450px;
+    width: 100%;
+    max-width: 1450px;
     background-color: #2D25A0;
     display: flex;
     justify-content: space-around;
@@ -23,7 +24,7 @@
     background: #E02C6D;
     text-align: center;
     padding: 10px;
-
+    width: 150px;
 }
 .live-anchor:hover{
     transform: scale(1.2);
@@ -52,7 +53,7 @@ img{
 
     padding: 15px;
     background: #FFFFFF;
-   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 
 }
 
@@ -109,9 +110,9 @@ img{
     background-color: #E02C6D;
     width: 150px;
     height: 35px;
-   text-align: center;
-   margin: 0 auto;
-   padding-top: 10px;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 10px;
    
 }
 
@@ -134,29 +135,31 @@ img{
 }
 footer{
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding: 0px;
-margin-left: auto;
-margin-right: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
 small{
-font-family: Poppins;
-padding-top: 30px;
-font-size: 18px;
+    font-family: Poppins;
+    padding-top: 30px;
+    font-size: 18px;
 }
 /* Media queries */
 /* mobile devices */
-@media only screen and (max-width:688px) {
+@media only screen and (max-width:669px) {
     .players{
         
-        grid-template-columns: repeat(1 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
     }
-    .section{width:100%}
-    .player{
+
+    .banner-container, .football, .players .footer{
+        width: 100%;
         flex-direction: column;
     }
 }
