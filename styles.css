@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+
+
+/* banner styling */
+
+.banner-container{
+    width: 1450px;
+    background-color: #2D25A0;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+
+.banner-heading{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color:white;
+    font-size: 34px;
+    
+}
+.live-anchor{
+    background: #E02C6D;
+    text-align: center;
+    padding: 10px;
+
+}
+.live-anchor:hover{
+    transform: scale(1.2);
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+i{
+    color: white;
+}
+
+
+.banner-image{
+
+    width: 550px;
+
+}
+/* Styling the players  2nd section */
+img{
+    width:100%;
+   
+}
+.player{
+
+
+    padding: 15px;
+    background: #FFFFFF;
+   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+
+}
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    width: 1100px;
+    margin: 0 auto;
+
+    gap: 20px ;
+   
+}
+
+/* styling section-3 */
+.football{
+   
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Media Queries */
+    
+
+
+
+#news-title{
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+#news{
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+
+
+#anchor{
+    background-color: #E02C6D;
+    width: 150px;
+    height: 35px;
+   text-align: center;
+   margin: 0 auto;
+   padding-top: 10px;
+   
+}
+
+/* footer style */
+.footer-item{
+  
+    width: 400px;
+    height: 200px;
+    border: 2px solid gray;
+}  
+
+#logo {
+    width: 380px;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+ 
+    width: 40px;
+}
+footer{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 0px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+small{
+font-family: Poppins;
+padding-top: 30px;
+font-size: 18px;
+}
+/* Media queries */
+/* mobile devices */
+@media only screen and (max-width:688px) {
+    .players{
+        
+        grid-template-columns: repeat(1 1fr);
+    }
+    .section{width:100%}
+    .player{
+        flex-direction: column;
+    }
+}
+    
